@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_toLeftOf="@id/shopname"
+            android:layout_above="@id/poster"
+            android:paddingBottom="10dp"
+            android:background="@android:color/darker_gray"
+            android:src="@drawable/bubbleteaicon" />
+        <TextView
+            android:id="@+id/shopname"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_above="@id/poster"
+            android:layout_toRightOf="@id/logo"
+            android:paddingTop="30dp"
+            android:paddingLeft="60dp"
+            android:background="@android:color/darker_gray"
+            android:text="BoooBa"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            android:fontFamily="cursive"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/poster"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        android:layout_weight="1"
+        android:src="@drawable/mainimg" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:paddingLeft="30dp"
+        android:text="Welcome To BoooBa Milk Tea!"
+        android:layout_margin="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        >
+        <ImageView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/timetext"
+            android:layout_below="@id/timetext"
+            android:paddingLeft="60dp"
+            android:src="@drawable/time" />
+
+        <TextView
+            android:id="@+id/timetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/time"
+            android:fontFamily="cursive"
+            android:paddingLeft="20dp"
+            android:text="Mon - Fri 24 Hours :)"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        >
+        <ImageView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/phonetext"
+            android:paddingLeft="60dp"
+            android:src="@drawable/phone" />
+
+        <TextView
+            android:id="@+id/phonetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/phone"
+            android:fontFamily="cursive"
+            android:paddingLeft="20dp"
+            android:text="123-321-1234567"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+        <ImageView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/locationtext"
+            android:paddingLeft="60dp"
+            android:src="@drawable/location" />
+
+        <TextView
+            android:id="@+id/locationtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/location"
+            android:fontFamily="cursive"
+            android:paddingLeft="20dp"
+            android:text="888 Android St, UdaCity 12345"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+</LinearLayout>
